@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Game</title>
+</head>
+<body>
+    <h1>Click the Button Game</h1>
+    <button id="clickMeBtn">Click me!</button>
+    <p>Clicks: <span id="clicks">0</span></p>
+    <script>
+        let clickCount = 0;
+        document.getElementById("clickMeBtn").onclick = function() {
+            clickCount++;
+            document.getElementById("clicks").innerText = clickCount;
+        }
+    </script>
+</body>
+</html>
